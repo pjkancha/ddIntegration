@@ -29,6 +29,7 @@ public class DDIncidentType {
 		if (jsonNode.path("detail").path("messageType").asText().equals("NEW_INSIGHT")) 
 			{
 				DDIncidentType.newInsight(jsonNode);
+				
 			} 
 		
 		else if (jsonNode.path("detail").path("messageType").asText().equals("CLOSED_INSIGHT")) {
